@@ -1,0 +1,19 @@
+{
+  "name": "buggy-cars-bdd-tests",
+  "version": "1.0.0",
+  "description": "Pruebas E2E con Cypress + Cucumber para Buggy Cars",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:register": "cypress run --spec 'cypress/e2e/features/01-register.feature'",
+    "test:login": "cypress run --spec 'cypress/e2e/features/02-login.feature'",
+    "test:profile": "cypress run --spec 'cypress/e2e/features/03-profile.feature'",
+    "test:all": "cypress run --spec 'cypress/e2e/features/**/*.feature'",
+    "test:headed": "cypress run --headed --spec 'cypress/e2e/features/**/*.feature'"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.0.0"
+  }
+}
